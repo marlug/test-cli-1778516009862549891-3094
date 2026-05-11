@@ -1,0 +1,12 @@
+name: dispatch-test
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run command
+        run: |
+          echo "Workflow dispatch trigger received successfully!"
